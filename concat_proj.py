@@ -69,6 +69,10 @@ def get_default_ignore_patterns() -> List[str]:
         '**/*.swn',           # Vim swap files
         '**/*.bak',           # Generic backup files
         '**/*#',              # Emacs auto-save files
+
+        # Concat-proj files
+        'concat_proj.py',
+        'concat-proj/**',
     ]
 
 def should_include_file(file_path: str, include_patterns: List[str], ignore_patterns: List[str]) -> bool:
